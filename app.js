@@ -17,24 +17,33 @@
     });
   });
 
-
-
 const form = document.getElementById('myForm');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
 
-    const formData = new FormData(form);
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
 
-    fetch(form.action, {
-      method: 'POST',
-      body: formData
-    })
+  const formData = new FormData(form);
+
+ //ye  "sending" alert show karega
+  Swal.fire({
+    title: 'Sending...',
+    text: 'Please wait while your message is being sent To Madhu Sailesh.',
+    allowOutsideClick: false,
+    didOpen: () => {
+      Swal.showLoading();
+    }
+  });
+
+  fetch(form.action, {
+    method: 'POST',
+    body: formData
+  })
     .then(response => response.text())
     .then(data => {
       Swal.fire({
         icon: 'success',
         title: 'Message Sent!',
-        text: 'Thanks for reaching out To Madhu Sailesh',
+        text: 'Thanks for reaching out to Madhu Sailesh',
         confirmButtonColor: '#3085d6'
       });
       form.reset();
@@ -48,4 +57,4 @@ const form = document.getElementById('myForm');
       });
       console.error(error);
     });
-  });
+});
