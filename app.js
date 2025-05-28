@@ -1,21 +1,21 @@
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+const navItems = navLinks.querySelectorAll('a');
+const body = document.body;
 
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-  const navItems = navLinks.querySelectorAll('a');
+// Toggle menu + blur effect
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+  body.classList.toggle('blur-active');
+});
 
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-      
-
-    });
-
-
-    //band karne keliye
-    navItems.forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('show');
-    });
+// Close menu + remove blur on link click
+navItems.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+    body.classList.remove('blur-active');
   });
+});
 
 const form = document.getElementById('myForm');
 
@@ -24,7 +24,6 @@ form.addEventListener('submit', function (e) {
 
   const formData = new FormData(form);
 
- //ye  "sending" alert show karega
   Swal.fire({
     title: 'Sending...',
     text: 'Please wait while your message is being sent To Madhu Sailesh.',
