@@ -337,8 +337,8 @@ font-family: "Rubik Dirt", system-ui;
   border: 1px solid rgb(184, 223, 11);
   padding: 10px 20px;
   border-radius: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
   margin-bottom: 10px;
 }
 
@@ -349,9 +349,10 @@ font-family: "Rubik Dirt", system-ui;
   font-style: normal;
 }
 .discription {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bangers", system-ui;
   font-weight: 400;
   font-style: normal;
+  margin-top: 20px;
 }
 .discription span {
   color: magenta;
@@ -360,6 +361,11 @@ font-family: "Rubik Dirt", system-ui;
 
 .experience{
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /* padding-top: 1000px;
+  padding-bottom: 1000px; */
+  /* margin: 1000px; */
 }
 
 #experiance-heading{
@@ -382,6 +388,7 @@ border-radius: 20px;
   max-width: 500px;
   margin: 20px auto;
   box-shadow: 0 0 10px rgba(0, 255, 200, 0.1);
+  
 }
 
   .duration{text-align: right;
@@ -435,6 +442,8 @@ border-radius: 20px;
   box-shadow: 0 0 20px rgba(60, 0, 255, 0.5);
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 90px;
+  margin-top: 90px;
 }
 
 .section-title {
@@ -453,6 +462,7 @@ border-radius: 20px;
   gap: 10px;
   width: max-content;
   animation: scroll-left 7.5s linear infinite;
+  /* margin-bottom: 100px; */
 }
 
 @keyframes scroll-left {
@@ -553,8 +563,10 @@ margin-top: 20px;
   /* margin: 0 auto; */
   text-align: center;
 border-radius: 20px;
-margin-left: 20px;
-margin-bottom: 10px;
+margin-left: 450px;
+margin-bottom: 50px;
+margin-top: 100px;
+/* text-align: center; */
 }
 
 .card {
@@ -648,6 +660,12 @@ margin-bottom: 10px;
   margin-left: 100px;
   margin-bottom: 100px;
   
+
+
+
+   
+
+
 }
 
 .contact-with-me {
@@ -659,14 +677,14 @@ margin-bottom: 10px;
   margin-left: 10px;
 }
 
-.contact-box {
+/* .contact-box {
   background-color: #0f172a; 
   border: 1px solid #334155; 
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   margin: 10px;
-}
+} */
 
 .contact-desc {
   color: #cbd5e1; /* Light gray-blue */
@@ -702,6 +720,8 @@ margin-bottom: 10px;
 }
 
 
+
+
 .submit-btn {
   margin-top: 20px;
   width: 100%;
@@ -719,6 +739,101 @@ margin-bottom: 10px;
 .submit-btn:hover {
   background: linear-gradient(to right, #d946ef, #6366f1);
 }
+
+
+
+/* New Contact Layout */
+.contact-container {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
+
+} */
+
+
+display: flex;
+  flex-direction: row; /* default hai, likhna optional hai */
+  justify-content: space-between; /* ya center / flex-start / flex-end */
+  gap: 250px; /* dono divs ke beech thoda gap dene ke liye */
+  width: 100%;
+  max-width: 700px;
+  margin: 100px auto; 
+
+
+}
+
+.contact-box {
+  flex: 1;
+  min-width: 450px;
+  background-color: #0b1320;
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid #334155;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  
+}
+
+.contact-info {
+  flex: 1;
+  /* min-width: 190px; */
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border-left: red; */
+  border-left:  2px solid rgb(222, 119, 9) ;
+  margin-right: 100px;
+  padding-left: 100px;
+
+
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #e2e8f0;
+}
+
+.info-item i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #94a3b8;
+}
+
+.social-icons {
+  margin-top: 30px;
+  /* margin-right: 100px; */
+  display: flex;
+  justify-content:space-between;
+}
+
+.social-icons a i{
+  display: inline-block;
+  margin-right: 15px;
+  color: #cbd5e1;
+  font-size: 22px;
+  background-color: #1e293b;
+  padding: 10px;
+height: 40px;
+width: 40px;
+
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.social-icons a i:hover {
+  background-color: #fa0e0e;
+  color: white;
+}
+
+
+
 
 
 .footer {
@@ -935,5 +1050,94 @@ body {
   .contact-section{
     margin: 0px;
   }
+
+  #container-heading{
+  border: 2px solid green;
+  display: inline-block; 
+  padding: 10px 20px;
+  /* margin: 0 auto; */
+  text-align: center;
+border-radius: 20px;
+margin-left: 10px;
+/* text-align: center; */
+}
+
+
+
+.about{
+  border: 1px solid rgb(184, 223, 11);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+
+.contact-container {
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+
+
+} 
+
+
+.contact-box {
+  flex: 1;
+  min-width: 200px;
+  background-color: #0b1320;
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid #334155;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  
+}
+
+
+
+
+.contact-info {
+  flex: 1;
+  /* min-width: 190px; */
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right:0px;
+  padding-right:2px;
+  border: none;
+  
+  padding-left: 0px;
+  
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #e2e8f0;
+  gap: 10px;
+}
+
+.info-item i {
+  font-size: 20px;
+  margin-right: 0px;
+  color: #94a3b8;
+}
+
+.social-icons {
+  margin-top: px;
+  /* margin-right: 100px; */
+  display: flex;
+  justify-content:left;
+  
+}
+
+
 }
 
