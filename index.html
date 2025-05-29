@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Bebas+Neue&family=Exile&family=Grechen+Fuemen&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Bebas+Neue&family=Exile&family=Grechen+Fuemen&family=Lavishly+Yours&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Bebas+Neue&family=Exile&family=Grechen+Fuemen&family=Lavishly+Yours&family=Rubik+Dirt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barrio&family=Bebas+Neue&family=Exile&family=Grechen+Fuemen&family=Lavishly+Yours&family=Rubik+Dirt&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -39,10 +40,10 @@
   <ul id="navLinks">
     <li><a href="index.html">HOME</a></li>
     <li><a href="#about">ABOUT ME</a></li>
-    <li><a href="#experience">EXPERIENCES</a></li>
-    <li><a href="#education">EDUCATION</a></li>
+    <li><a href="#experiance-heading">EXPERIENCES</a></li>
+    <li><a href="#education-heading">EDUCATION</a></li>
     <li><a href="#skills">SKILLS</a></li>
-    <li><a href="#container">PROJECTS</a></li>
+    <li><a href="#container-heading">PROJECTS</a></li>
   </ul>
 </nav>
 
@@ -172,7 +173,7 @@
 
 <div class="education" id="education">
   <div id="education-heading">
-  <h3 style="text-align: center;"  > Education </h3>
+  <h3 style="text-align: center;" id="#qwe"> Education </h3>
   </div>
 <div class="education-card">
   <p class="duration" style="text-align: center;">High School</p>
@@ -183,7 +184,11 @@
       <p class="company"> Bhanjanajar<span class="type">,Ganjam</span></p>
     </div>
   </div>
-</div>
+</div> 
+
+
+
+
 
 
 <div class="education-card">
@@ -216,7 +221,7 @@
 
  <div class="container" id="container">
 
-  <!-- <div id="container-heading"><h3>PROJECTS</h2></div> -->
+  
     <div class="card">
       <div class="project-header">
        <h2>TAC-TOE-GAME</h2>
@@ -296,7 +301,7 @@
   </div>
 
 
- 
+<!--  
 <section class="contact-section" id="contact-section">
   <h2 class="contact-with-me">Connect With Me....</h2>
   <div class="contact-box">
@@ -323,6 +328,65 @@
         SEND MESSAGE 📧 
       </button>
     </form>
+  </div>
+</section> -->
+
+
+
+<section class="contact-section" id="contact-section">
+  <h2 class="contact-with-me">CONTACT WITH ME</h2>
+  <div class="contact-container">
+    
+    <!-- Left: Contact Form -->
+    <div class="contact-box">
+      <p class="contact-desc">
+        feel free to ask..
+      </p>
+
+      <form
+        class="contact-form"
+        id="myForm"
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbzPaiPFTbeR1o4o7nxb70wIBVb83HPJnUi1RcFadMuOjcv2iIe9Po5sHVKVBQsPcfr4gw/exec"
+      >
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message" required></textarea>
+
+        <button type="submit" class="submit-btn">
+          SEND MESSAGE 📧
+        </button>
+      </form>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="contact-info">
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <span>madhusaileshsasamal998@gmail.com</span>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <span>+91 9556136949</span>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Bhubaneswar, Odisha, India</span>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://github.com/madhusailesh"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/madhu-sailesh-sasamal-6918912a4/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/madhu_sailesh/"><i class="fab fa-instagram"></i></a>
+      
+      <a href="https://x.com/SaileshMadhu"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
   </div>
 </section>
 
